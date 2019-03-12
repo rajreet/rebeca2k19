@@ -427,7 +427,7 @@ a:hover, a:active {
 --------------------------------*/
 .countdown-holder {
     margin-right: 12px;
-    color: #fff;
+    color: #3F3C3C;
     font-size: 18px;
     font-weight: bold;
 }
@@ -2200,3 +2200,7 @@ ul.tabs-nav .tab-nav.active {
         width:auto;
         height: 100%;
     }
+
+.entry-header{
+  color:#b38cb4;
+}
