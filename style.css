@@ -802,9 +802,7 @@ a:active {
     }
 }
 
-.homepage-next-events {
-    height: 100vh;
-}
+
 
 .homepage-next-events .next-event-wrap {
     margin-top: 96px;
@@ -2241,9 +2239,22 @@ ul.tabs-nav .tab-nav.active {
     z-index: 10;
     height: 100vh;
 }
-#countdown{
+
+#countdown {
     position: absolute;
     bottom: 100px;
     left: 5vw;
     padding: 0;
+}
+
+.fullvh {
+    height: 100vh;
+}
+
+.my-title {
+    position: absolute;
+    top: 140px;
+}
+.sb-wrapper{
+    
 }
