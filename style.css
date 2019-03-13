@@ -438,14 +438,13 @@ a:active {
 --------------------------------*/
 .countdown-holder {
     margin-right: 12px;
-    color: #363636;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
     font-size: 18px;
     font-weight: bold;
 }
 
-.entry-
-
-.countdown-holder label {
+.entry- .countdown-holder label {
     font-size: 13px;
 }
 
@@ -786,7 +785,8 @@ a:active {
     font-size: 60px;
     font-weight: bold;
     line-height: 1;
-    color: #232127;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
     background: url("images/next-events-header-bg.png") no-repeat center;
     text-align: center;
 }
@@ -887,8 +887,8 @@ a:active {
 # Homepage - Regional Events
 --------------------------------------------------------------*/
 .homepage-regional-events {
-    min-height: 1500px;
-    padding-top: 280px;
+    height: 100vh;
+    padding-top: 60px;
     background: url("images/regional-events-bg new.png") no-repeat;
     background-size: cover;
 }
@@ -2255,7 +2255,7 @@ ul.tabs-nav .tab-nav.active {
 
 .my-title {
     position: absolute;
-    top: 140px;
+    top: 10px;
 }
 
 .sb-wrapper {}
@@ -2270,9 +2270,7 @@ ul.tabs-nav .tab-nav.active {
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 992px) {
-    
-}
+@media screen and (min-width: 992px) {}
 
 .tabs {
     width: 100%;
@@ -2281,12 +2279,14 @@ ul.tabs-nav .tab-nav.active {
     position: relative;
     text-align: left;
 }
-.tabs h3{
+
+.tabs h3 {
     color: #ffffffb6;
 }
-.tabs .tab-content p{
+
+.tabs .tab-content p {
     color: #fff;
-  
+
 }
 
 .tabs li {
@@ -2306,7 +2306,7 @@ ul.tabs-nav .tab-nav.active {
     padding: 14px;
     border-radius: 2px 2px 0 0;
     font-size: 20px;
-    height: 40px;   
+    height: 40px;
     font-weight: lighter;
     background: #612e76;
     color: #fff;
@@ -2371,6 +2371,28 @@ p.link a:hover {
     background-color: #522764;
 }
 
-.entry-header{
-  color:#b38cb4;
+.entry-header {
+    color: #b38cb4;
+}
+
+#textdiv {
+    background-color: black;
+    background: rgba(0, 0, 0, 0.5);
+    height: 88%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#textdiv p,
+h1 {
+    color: white;
+}
+
+.event-content-wrap{
+    transition: transform .2s;
+}
+
+.event-content-wrap:hover {
+    transform: scale(1.1);
 }
