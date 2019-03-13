@@ -2279,10 +2279,18 @@ ul.tabs-nav .tab-nav.active {
     position: relative;
     text-align: left;
 }
+.tabs h3{
+    color: #ffffffb6;
+}
+.tabs .tab-content p{
+    color: #fff;
+  
+}
 
 .tabs li {
     float: left;
     display: block;
+    width: 25%;
 }
 
 .tabs input[type="radio"] {
@@ -2297,8 +2305,7 @@ ul.tabs-nav .tab-nav.active {
     border-radius: 2px 2px 0 0;
     font-size: 20px;
     height: 40px;   
-    font-weight: normal;
-    text-transform: uppercase;
+    font-weight: lighter;
     background: #612e76;
     color: #fff;
     cursor: pointer;

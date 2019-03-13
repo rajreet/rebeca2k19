@@ -4,11 +4,13 @@ document.addEventListener("DOMContentLoaded", particlesJS.load('particle-box', '
 
 document.getElementById("selDay").addEventListener("click", () => {
     if (document.getElementsByName("tabs")[0].checked) {
-        document.getElementById("typedDay").innerHTML = "Events on First"
+        document.getElementById("typedDay").innerHTML = "Events on Saptami"
     } else if (document.getElementsByName("tabs")[1].checked) {
-        document.getElementById("typedDay").innerHTML = "Events on Second"
+        document.getElementById("typedDay").innerHTML = "Events on Ashtami"
     } else if (document.getElementsByName("tabs")[2].checked) {
-        document.getElementById("typedDay").innerHTML = "Events on Third"
+        document.getElementById("typedDay").innerHTML = "Events on Navami"
+    } else if (document.getElementsByName("tabs")[3].checked) {
+        document.getElementById("typedDay").innerHTML = "Events on Dashami"
     }
 });
 
