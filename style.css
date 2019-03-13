@@ -438,10 +438,12 @@ a:active {
 --------------------------------*/
 .countdown-holder {
     margin-right: 12px;
-    color: #fff;
+    color: #363636;
     font-size: 18px;
     font-weight: bold;
 }
+
+.entry-
 
 .countdown-holder label {
     font-size: 13px;
@@ -2367,4 +2369,8 @@ p.link a {
 
 p.link a:hover {
     background-color: #522764;
+}
+
+.entry-header{
+  color:#b38cb4;
 }
