@@ -2,6 +2,16 @@ document.addEventListener("DOMContentLoaded", particlesJS.load('particle-box', '
     console.log('callback - particles.js config loaded');
 }));
 
+document.getElementById("selDay").addEventListener("click", () => {
+    if (document.getElementsByName("tabs")[0].checked) {
+        document.getElementById("typedDay").innerHTML = "Events on First"
+    } else if (document.getElementsByName("tabs")[1].checked) {
+        document.getElementById("typedDay").innerHTML = "Events on Second"
+    } else if (document.getElementsByName("tabs")[2].checked) {
+        document.getElementById("typedDay").innerHTML = "Events on Third"
+    }
+});
+
 
 $(function () {
     var Page = (function () {

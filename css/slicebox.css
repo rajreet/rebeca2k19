@@ -1,7 +1,7 @@
 /* Slicebox Style */
 .sb-slider {
 	position: absolute;
-	top: 10vh;
+	top: 0;
 	overflow: hidden;
 	width: 100%;
 	right: 0;
