@@ -1,7 +1,9 @@
-var countDownDate = new Date("April 14, 2019 15:37:25").getTime();
+var countDownDate = new Date("April 4, 2019 15:37:25").getTime();
 
 // Update the count down every 1 second
-document.addEventListener('DOMContentLoaded',()=>{
+
+
+  var x = setInterval(function() {
 
   // Get todays date and time
   var now = new Date().getTime();
@@ -19,4 +21,4 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.querySelector('.dhour').innerHTML=hours;
   document.querySelector('.dmin').innerHTML=minutes;
   document.querySelector('.dsec').innerHTML=seconds;
-});
+},1000);
