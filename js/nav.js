@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.querySelector('#events').onclick=()=>{
 
     window.scroll({
-      top:document.querySelector('.homepage-next-events').offsetTop-document.querySelector('.header-bar').offsetHeight,
+      top:document.querySelector('.homepage-next-events').offsetTop -document.querySelector('.header-bar').offsetHeight,
       left:0,
       behaviour:'smooth'
     });
