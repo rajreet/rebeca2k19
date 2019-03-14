@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.querySelector('#artists').onclick=()=>{
 
     window.scroll({
-      top:document.querySelector('.homepage-featured-events').offsetTop,
+      top:document.querySelector('.homepage-featured-events').offsetTop-document.querySelector('.header-bar').offsetHeight,
       left:0,
       behaviour:'smooth'
     });
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.querySelector('#events').onclick=()=>{
 
     window.scroll({
-      top:document.querySelector('.homepage-next-events').offsetTop,
+      top:document.querySelector('.homepage-next-events').offsetTop-document.querySelector('.header-bar').offsetHeight,
       left:0,
       behaviour:'smooth'
     });
@@ -39,6 +39,15 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     window.scroll({
       top:document.querySelector('.site-footer').offsetTop,
+      left:0,
+      behaviour:'smooth'
+    });
+  };
+
+  document.querySelector('#sponsors').onclick=()=>{
+
+    window.scroll({
+      top:document.querySelector('.homepage-regional-events').offsetTop,
       left:0,
       behaviour:'smooth'
     });
