@@ -9,6 +9,9 @@
     font-style: normal;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body {
     color: #2f2f2f;
     font-family: 'Calibri';
