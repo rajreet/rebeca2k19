@@ -333,6 +333,7 @@ a:active {
 .hero-content {
     padding-top: 150px;
     padding-bottom: 120px;
+    color:#F5ECCE;
 }
 
 .hero-content .container,
@@ -529,7 +530,8 @@ a:active {
     font-size: 60px;
     font-weight: bold;
     line-height: 1;
-    color: #232127;
+    color: #F5ECCE;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .homepage-info-section .entry-content {
@@ -893,7 +895,7 @@ a:active {
 # Homepage - Regional Events
 --------------------------------------------------------------*/
 .homepage-regional-events {
-    height: 100vh;
+    height: 150vh;
     padding-top: 60px;
     background: url("images/regional-events-bg new.png") no-repeat;
     background-size: cover;
@@ -1021,7 +1023,7 @@ a:active {
 .events-partners-logos .event-partner-logo {
     width: 20%;
     min-width: 220px;
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: center;
 }
 

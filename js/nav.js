@@ -8,14 +8,18 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
   };
 
-  document.querySelector('#aboutus').onclick=()=>{
+  document.querySelectorAll('#aboutus').forEach(button =>{
+    button.onclick=()=>{
+
 
     window.scroll({
-      top:document.querySelector('.homepage-info-section').offsetTop,
+      top:document.querySelector('.homepage-info-section').offsetTop+50,
       left:0,
       behaviour:'smooth'
     });
   };
+  });
+
 
   document.querySelector('#artists').onclick=()=>{
 
@@ -38,7 +42,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.querySelector('#contact').onclick=()=>{
 
     window.scroll({
-      top:document.querySelector('.site-footer').offsetTop,
+      top:document.querySelector('.site-footer').offsetTop-document.querySelector('.header-bar').offsetHeight,
       left:0,
       behaviour:'smooth'
     });
