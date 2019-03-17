@@ -31,7 +31,7 @@ $(function () {
                 orientation: 'h',
                 cuboidsCount: 3,
                 autoplay: true,
-                interval: 5000
+                interval: 2500
             }),
 
             init = function () {
