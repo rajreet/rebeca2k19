@@ -571,6 +571,7 @@ a:active {
 .homepage-featured-events .event-content-wrap figure img {
     display: block;
     width: 100%;
+    transition: opacity .2s ease-in-out;
 }
 
 .homepage-featured-events .event-content-wrap .entry-header {
@@ -578,6 +579,7 @@ a:active {
     left: 18px;
     bottom: 24px;
     z-index: 99;
+    transition: opacity .2s ease-in-out;
 }
 
 .homepage-featured-events .event-content-wrap .entry-header .entry-title {
@@ -2398,9 +2400,23 @@ h1 {
 }
 
 .event-content-wrap{
-    transition: transform .2s;
+    transition: transform .2s !important;
 }
 
 .event-content-wrap:hover {
     transform: scale(1.1);
+    opacity:0.7;
+
+}
+
+
+
+
+.event-content-wrap:hover > .entry-header{
+  visibility: visible !important;
+  opacity:1;
+}
+
+#tab-content-2{
+  padding:0;
 }
