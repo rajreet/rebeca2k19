@@ -24,23 +24,52 @@
 
 
 <body>
+
     <header class="site-header">
         <div id="particle-box">
             <div class="header-bar">
                 <div class="container-fluid">
                     <div class="row align-items-center">
-                        <div class="col-10 col-lg-2 order-lg-1">
-                            <div class="site-branding">
-                                <div class="site-title">
-                                    <a href="#"><img src="images/logo.png" alt="logo"></a>
-                                </div><!-- .site-title -->
-                            </div><!-- .site-branding -->
+                        <div class="col">
+                          <nav role="navigation ">
+                            <div id="menuToggle">
+                              <!--
+                              A fake / hidden checkbox is used as click reciever,
+                              so you can use the :checked selector on it.
+                              -->
+                              <input type="checkbox" />
+
+                              <!--
+                              Some spans to act as a hamburger.
+
+                              They are acting like a real hamburger,
+                              not that McDonalds stuff.
+                              -->
+                              <span></span>
+                              <span></span>
+                              <span></span>
+
+                              <!--
+                              Too bad the menu has to be inside of the button
+                              but hey, it's pure CSS magic.
+                              -->
+                              <ul id="menu">
+                                <li class="hmenu-item"><a href="javascript:;" id="home" class="hmenu-link">Home</a></li>
+                                <li class="hmenu-item"><a href="javascript:;" id="aboutus" class="hmenu-link">About us</a></li>
+                                <li class="hmenu-item"><a href="javascript:;" id="artists" class="hmenu-link">Artists</a></li>
+                                <li class="hmenu-item"><a href="javascript:;" id="events" class="hmenu-link">Events</a></li>
+                                <li class="hmenu-item"><a href="javascript:;" id="sponsors" class="hmenu-link">Sponsors</a></li>
+                                <li class="hmenu-item"><a href="javascript:;" id="contact" class="hmenu-link">Contact</a></li>
+                              </ul>
+                            </div>
+                          </nav>
                         </div><!-- .col -->
 
-                        <div class="col-md-auto col-lg-8 order-3 order-lg-2">
+                        <div class="col-9">
 
                             <nav class="site-navigation">
-                              
+
+
 
                                 <ul>
                                     <li><a href="javascript:;" id="home">Home</a></li>
@@ -51,6 +80,14 @@
                                     <li><a href="javascript:;" id="contact">Contact</a></li>
                                 </ul>
                             </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+
+                        <div class="col">
+                            <div class="site-branding">
+                                <div class="site-title">
+                                    <a href="#"><img src="images/logo.png" alt="logo" style="float:right; width:100%"></a>
+                                </div><!-- .site-title -->
+                            </div><!-- .site-branding -->
                         </div><!-- .col -->
 
 
@@ -121,7 +158,7 @@
                     </div>
 
                     <footer class="entry-footer">
-                        <a href="#" class="btn gradient-bg">Our team</a>
+                        <a href="contact.html" class="btn gradient-bg">Our team</a>
 
                     </footer>
                 </div>
@@ -250,7 +287,7 @@
 
                 <div class="row" style="height:40vh">
 
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-md-4">
 
                         <ul class="tabs" role="tablist" id="selDay">
                             <li>
@@ -258,10 +295,7 @@
                                 <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">Day
                                     1</label>
                                 <div id="tab-content1" class="tab-content" role="tabpanel" aria-hidden="false">
-                                    <h3>April 4</h3>
-                                    <p>3:00_PM -> Inaugural Ceremony</p>
-                                    <p>5:00_PM -> Voice of REBECA</p>
-                                    <p>8:00_PM -> Classical Night</p>
+                                    <img src ="images/4th April .jpg" style ="max-width:100%; opacity:0.9;"></img>
                                 </div>
                             </li>
 
@@ -304,7 +338,7 @@
                         </ul>
                         <br style="clear: both;" />
                     </div>
-                    <div class="col-12 col-lg-8">
+                    <div class="col-12 col-md-8">
                         <div class="sb-wrapper">
 
                             <ul id="sb-slider" class="sb-slider">
