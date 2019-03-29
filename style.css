@@ -2514,3 +2514,21 @@ h1 {
 {
   transform: none;
 }
+
+/*Event page*/
+.pop {
+    transition: transform .2s;
+}
+
+
+.rimg3 {
+    clip-path: circle(48% at center);
+}
+
+.rimg2 {
+    clip-path: circle(43% at center);
+}
+
+.rimg1 {
+    clip-path: circle(39% at center);
+}
