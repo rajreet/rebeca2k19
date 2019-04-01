@@ -153,75 +153,20 @@ a:active {
 .site-branding img {
     display: block;
     max-width: 100%;
+
 }
 
 @media screen and (min-width: 992px) {
     .site-branding {
-        margin-left: 45px;
+      margin-right:45;
     }
 
     .site-header .site-title img {
         max-height: 999px;
+
     }
 }
 
-/*
-  Hamburger Menu
-----------------------------------------*/
-.hamburger-menu {
-    position: relative;
-    width: 100%;
-    max-width: 24px;
-    height: 22px;
-    margin-left: auto;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-}
-
-.hamburger-menu span {
-    display: block;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: #fff;
-    border-radius: 10px;
-    opacity: 1;
-    left: 0;
-    transition: .25s ease-in-out;
-}
-
-.hamburger-menu span:nth-child(1) {
-    top: 2px;
-}
-
-.hamburger-menu span:nth-child(2),
-.hamburger-menu span:nth-child(3) {
-    top: 10px;
-}
-
-.hamburger-menu span:nth-child(4) {
-    top: 18px;
-}
-
-.hamburger-menu.open span:nth-child(1) {
-    top: 18px;
-    width: 0;
-    left: 50%;
-}
-
-.hamburger-menu.open span:nth-child(2) {
-    transform: rotate(45deg);
-}
-
-.hamburger-menu.open span:nth-child(3) {
-    transform: rotate(-45deg);
-}
-
-.hamburger-menu.open span:nth-child(4) {
-    top: 18px;
-    width: 0;
-    left: 50%;
-}
 
 /*
 # Main Menu
@@ -541,7 +486,7 @@ a:active {
 .homepage-info-section .entry-content p {
     font-size: 18px;
     line-height: 1.7;
-    color: #777777;
+    color: #F5ECCE;
 }
 
 .homepage-info-section .entry-footer a {
@@ -571,6 +516,7 @@ a:active {
 .homepage-featured-events .event-content-wrap figure img {
     display: block;
     width: 100%;
+    transition: opacity .2s ease-in-out;
 }
 
 .homepage-featured-events .event-content-wrap .entry-header {
@@ -578,6 +524,7 @@ a:active {
     left: 18px;
     bottom: 24px;
     z-index: 99;
+    transition: opacity .2s ease-in-out;
 }
 
 .homepage-featured-events .event-content-wrap .entry-header .entry-title {
@@ -788,8 +735,7 @@ a:active {
 }
 
 .next-events-section-header .entry-title,
-.events-partners .entry-title,
-.homepage-info-section .entry-title {
+.events-partners .entry-title {
     padding: 24px 0;
     font-size: 60px;
     font-weight: bold;
@@ -798,16 +744,6 @@ a:active {
     text-shadow: 2px 2px 4px #000000;
     background: url("images/next-events-header-bg.png") no-repeat center;
     text-align: center;
-}
-
-.con .entry-title {
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1;
-    color: rgb(129, 129, 129);
-    text-shadow: 2px 2px 4px rgba(153, 1, 255, 0.281);
-    padding: 30px 0 20px 0;
 }
 
 .next-events-section-header p {
@@ -1033,7 +969,7 @@ a:active {
 
 .events-partners-logos .event-partner-logo {
     width: 20%;
-    min-width: 220px;
+    min-width: 20%;
     margin-top: 40px;
     text-align: center;
 }
@@ -1938,6 +1874,99 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # Contact Page
 --------------------------------------------------------------*/
+.contact-location-details {
+    margin-top: 80px;
+}
+
+.contact-location-details .entry-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #232127;
+}
+
+.contact-location-details .entry-content {
+    margin-top: 26px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777777;
+}
+
+.contact-location-details .entry-footer ul {
+    padding: 0;
+    margin: 42px 0 0;
+    list-style: none;
+}
+
+.contact-location-details .entry-footer li {
+    padding-left: 48px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #232127;
+}
+
+.contact-location-details .entry-footer li a {
+    color: #232127;
+    text-decoration: none;
+}
+
+
+.contact-location-details .entry-footer li.contact-address {
+    background: url("images/location-icon.png") no-repeat left center;
+}
+
+.contact-location-details .entry-footer li.contact-number {
+    background: url("images/phone-icon.png") no-repeat left center;
+}
+
+.contact-location-details .entry-footer li.contact-email {
+    background: url("images/folder-icon.png") no-repeat left center;
+}
+
+.contact-page-map {
+    margin-top: 80px;
+}
+
+.contact-page-map iframe {
+    width: 100%;
+    height: 540px;
+}
+
+.contact-form {
+    margin: 120px 0;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 22px;
+    margin-bottom: 30px;
+    border: 1px solid #e5e5e5;
+    background: #f3f8f9;
+    color: #232127;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+}
+
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder {
+    font-style: italic;
+}
+
+.contact-form input[type="submit"] {
+    margin-top: 36px;
+    border: 0;
+}
+
+.contact-form input[type="submit"]:focus {
+    outline: none;
+    background: #9a28d7;
+}
 
 /*--------------------------------------------------------------
 # Elements Page
@@ -2256,7 +2285,7 @@ ul.tabs-nav .tab-nav.active {
     width: 100%;
     font-size: 17px;
     line-height: 25px;
-    padding: 25px;
+    padding: 00px;
     position: absolute;
     top: 43px;
     left: 0;
@@ -2315,21 +2344,182 @@ h1 {
     color: white;
 }
 
-.event-content-wrap {
-    transition: transform .2s;
+.event-content-wrap{
+    transition: transform .2s !important;
 }
 
 .event-content-wrap:hover {
     transform: scale(1.1);
+    opacity:0.7;
+
 }
 
+
+
+
+.event-content-wrap:hover > .entry-header{
+  visibility: visible !important;
+  opacity:1;
+}
+
+#tab-content-2{
+  padding:0;
+}
+
+/*hamburger menu*/
+
+.hmenu-link
+{
+  text-decoration: none !important;
+
+
+  transition: color 0.3s ease;
+}
+
+.hmenu-link:hover
+{
+  color: #F5ECCE;
+}
+
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+
+  z-index: 9999;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #cdcdcd;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  height:150vh;
+
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+
+  background-color: black;
+  background: rgba(0, 0, 0, 0.5);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu .hmenu-item
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/*Event page*/
 .pop {
     transition: transform .2s;
 }
 
-.pop:hover {
-    transform: scale(1.05);
-}
 
 .rimg3 {
     clip-path: circle(48% at center);

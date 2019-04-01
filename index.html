@@ -19,65 +19,58 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
     <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+
     <script src="js/custom.js"></script>
-</head>
+
 
 <body>
-    <div id="preloader">
-        <div id="status">&nbsp;</div>
-    </div>
-    <style>
-        body {
-  overflow: hidden;
-}
-
-
-/* Preloader */
-
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  /* change if the mask should have another color then white */
-  z-index: 9999;
-  /* makes sure it stays on top */
-}
-
-#status {
-  width: 200px;
-  height: 100px;
-  position: absolute;
-  left: 50%;
-  /* centers the loading animation horizontally one the screen */
-  top: 50%;
-  /* centers the loading animation vertically one the screen */
-  background-image: url(/copper-loader.gif);
-  /* path to your loading animation */
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: -50px 0 0 -100px;
-  /* is width and height divided by two */
-}
-    </style>
 
     <header class="site-header">
         <div id="particle-box">
             <div class="header-bar">
                 <div class="container-fluid">
                     <div class="row align-items-center">
-                        <div class="col-10 col-lg-2 order-lg-1">
-                            <div class="site-branding">
-                                <div class="site-title">
-                                    <a href="#"><img src="images/logo.png" alt="logo"></a>
-                                </div><!-- .site-title -->
-                            </div><!-- .site-branding -->
+                        <div class="col">
+                          <nav role="navigation ">
+                            <div id="menuToggle">
+                              <!--
+                              A fake / hidden checkbox is used as click reciever,
+                              so you can use the :checked selector on it.
+                              -->
+                              <input type="checkbox" />
+
+                              <!--
+                              Some spans to act as a hamburger.
+
+                              They are acting like a real hamburger,
+                              not that McDonalds stuff.
+                              -->
+                              <span></span>
+                              <span></span>
+                              <span></span>
+
+                              <!--
+                              Too bad the menu has to be inside of the button
+                              but hey, it's pure CSS magic.
+                              -->
+                              <ul id="menu">
+                                <li class="hmenu-item"><a href="javascript:;" id="home" class="hmenu-link">Home</a></li>
+                                <li class="hmenu-item"><a href="javascript:;" id="aboutus" class="hmenu-link">About us</a></li>
+                                <li class="hmenu-item"><a href="javascript:;" id="artists" class="hmenu-link">Artists</a></li>
+                                <li class="hmenu-item"><a href="javascript:;" id="events" class="hmenu-link">Events</a></li>
+                                <li class="hmenu-item"><a href="javascript:;" id="sponsors" class="hmenu-link">Sponsors</a></li>
+                                <li class="hmenu-item"><a href="javascript:;" id="contact" class="hmenu-link">Contact</a></li>
+                              </ul>
+                            </div>
+                          </nav>
                         </div><!-- .col -->
 
-                        <div class="col-2 col-lg-7 order-3 order-lg-2">
+                        <div class="col-9">
+
                             <nav class="site-navigation">
+
+
+
                                 <ul>
                                     <li><a href="javascript:;" id="home">Home</a></li>
                                     <li><a href="javascript:;" id="aboutus">About us</a></li>
@@ -88,6 +81,15 @@
                                 </ul>
                             </nav><!-- .site-navigation -->
                         </div><!-- .col -->
+
+                        <div class="col">
+                            <div class="site-branding">
+                                <div class="site-title">
+                                    <a href="#"><img src="images/logo.png" alt="logo" style="float:right; width:100%"></a>
+                                </div><!-- .site-title -->
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
 
                     </div><!-- .row -->
                 </div><!-- .container-fluid -->
@@ -124,7 +126,7 @@
                                     </div><!-- .countdown-holder -->
                                 </div><!-- .countdown -->
 
-                                <h1 class="entry-title" style="text-shadow: 2px 2px 4px #000000;">Lorem ipsum dolor sit amet <br>consectetur adipiscing elit!</h1>
+                                <h1 class="entry-title" style="text-shadow: 2px 2px 4px #000000;">left for Kolkata's largest cultural fest <br>Rebeca 2k19!</h1>
                             </div>
                             <!--- .entry-header -->
 
@@ -156,7 +158,7 @@
                     </div>
 
                     <footer class="entry-footer">
-                        <a href="#" class="btn gradient-bg">Our team</a>
+                        <a href="contact.html" class="btn gradient-bg">Our team</a>
 
                     </footer>
                 </div>
@@ -173,18 +175,33 @@
                             <figure>
                                 <a href="#"><img src="images/1.jpg" alt="1"></a>
                             </figure>
+
+                            <header class="entry-header" style="visibility:hidden;">
+                                <h3 class="entry-title">The Local Train</h3>
+                                <div class="posted-date">August 28</div>
+                            </header>
                         </div>
 
                         <div class="event-content-wrap positioning-event-2">
                             <figure>
                                 <a href="#"><img src="images/2.jpg" alt=""></a>
                             </figure>
+                            <header class="entry-header" style="visibility:hidden;">
+                                <h3 class="entry-title">Underground Authority</h3>
+                                <div class="posted-date">August 28</div>
+                            </header>
                         </div>
 
                         <div class="event-content-wrap positioning-event-3">
                             <figure>
                                 <a href="#"><img src="images/3.jpg" alt=""></a>
                             </figure>
+
+
+                            <header class="entry-header" style="visibility:hidden;">
+                                <h3 class="entry-title">SMS Sonic</h3>
+                                <div class="posted-date">August 28</div>
+                            </header>
                         </div>
 
                         <div class="event-content-wrap positioning-event-4 half">
@@ -210,8 +227,9 @@
                                 <a href="#"><img src="images/mumbai.jpg" alt="1"></a>
                             </figure>
 
-                            <header class="entry-header">
+                            <header class="entry-header" style="visibility:hidden;">
                                 <h3 class="entry-title">Mumbai Night</h3>
+                                <div class="posted-date">August 28</div>
                             </header>
                         </div>
 
@@ -220,8 +238,21 @@
                                 <a href="#"><img src="images/danceoff.jpg" alt=""></a>
                             </figure>
 
-                            <header class="entry-header">
+                            <header class="entry-header" style="visibility:hidden;">
                                 <h3 class="entry-title">Dance Off</h3>
+                                <div class="posted-date">August 28</div>
+                            </header>
+                        </div>
+
+                        <div class="event-content-wrap positioning-event-9">
+                            <figure>
+                                <a href="#"><img src="images/smoke.jpg" alt=""></a>
+                            </figure>
+
+                            <header class="entry-header" style="visibility:hidden;">
+                                <h3 class="entry-title">Smoke show</h3>
+
+                                <div class="posted-date">August 28</div>
                             </header>
                         </div>
 
@@ -256,7 +287,7 @@
 
                 <div class="row" style="height:40vh">
 
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-md-4">
 
                         <ul class="tabs" role="tablist" id="selDay">
                             <li>
@@ -264,10 +295,7 @@
                                 <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">Day
                                     1</label>
                                 <div id="tab-content1" class="tab-content" role="tabpanel" aria-hidden="false">
-                                    <h3>April 4</h3>
-                                    <p>3:00_PM -> Inaugural Ceremony</p>
-                                    <p>5:00_PM -> Voice of REBECA</p>
-                                    <p>8:00_PM -> Classical Night</p>
+                                    <img src ="images/4th April .jpg" style ="max-width:100%; opacity:0.9;"></img>
                                 </div>
                             </li>
 
@@ -310,7 +338,7 @@
                         </ul>
                         <br style="clear: both;" />
                     </div>
-                    <div class="col-12 col-lg-8">
+                    <div class="col-12 col-md-8">
                         <div class="sb-wrapper">
 
                             <ul id="sb-slider" class="sb-slider">
@@ -440,7 +468,7 @@
                                 </div>
 
                                 <div class="event-partner-logo">
-                                    <img src="images/Microsoft.png" alt="" style="width:7% !important;" >
+                                    <img src="images/Microsoft.png" alt="" style="width:70% !important;" >
                                 </div>
 
                                 <div class="event-partner-logo">
@@ -453,6 +481,7 @@
                 </div>
             </div>
         </div>
+
 
 
         <footer class="site-footer">
@@ -483,9 +512,9 @@
                         <div class="footer-social">
                             <ul class="flex flex-wrap justify-content-center align-items-center">
                                 <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+                                <li><a href="https://www.instagram.com/rebeca.iiests/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/FestRebeca/"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             </ul>
                         </div>
@@ -501,15 +530,6 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
-        <script>
-            $(window).on('load', function () { // makes sure the whole site is loaded 
-                $('#status').fadeOut(); // will first fade out the loading animation 
-                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-                $('body').delay(350).css({
-                    'overflow': 'visible'
-                });
-            })
-        </script>
         <script type="text/javascript" src="js/jquery.slicebox.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script src="script.js"></script>
