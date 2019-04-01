@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded',()=>{
-  document.querySelector('#home').onclick=()=>{
+  document.querySelectorAll('#home').forEach(button =>{
+    button.onclick=()=>{
+
 
     window.scroll({
       top:0,
@@ -7,6 +9,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       behaviour:'smooth'
     });
   };
+});
 
   document.querySelectorAll('#aboutus').forEach(button =>{
     button.onclick=()=>{
@@ -21,7 +24,9 @@ document.addEventListener('DOMContentLoaded',()=>{
   });
 
 
-  document.querySelector('#artists').onclick=()=>{
+  document.querySelectorAll('#artists').forEach(button =>{
+    button.onclick=()=>{
+
 
     window.scroll({
       top:document.querySelector('.homepage-featured-events').offsetTop-document.querySelector('.header-bar').offsetHeight,
@@ -29,8 +34,11 @@ document.addEventListener('DOMContentLoaded',()=>{
       behaviour:'smooth'
     });
   };
+});
 
-  document.querySelector('#events').onclick=()=>{
+document.querySelectorAll('#events').forEach(button =>{
+  button.onclick=()=>{
+
 
     window.scroll({
       top:document.querySelector('.homepage-next-events').offsetTop -document.querySelector('.header-bar').offsetHeight,
@@ -38,8 +46,11 @@ document.addEventListener('DOMContentLoaded',()=>{
       behaviour:'smooth'
     });
   };
+});
 
-  document.querySelector('#contact').onclick=()=>{
+document.querySelectorAll('#contact').forEach(button =>{
+  button.onclick=()=>{
+
 
     window.scroll({
       top:document.querySelector('.site-footer').offsetTop-document.querySelector('.header-bar').offsetHeight,
@@ -47,8 +58,10 @@ document.addEventListener('DOMContentLoaded',()=>{
       behaviour:'smooth'
     });
   };
+});
 
-  document.querySelector('#sponsors').onclick=()=>{
+document.querySelectorAll('#sponsors').forEach(button =>{
+  button.onclick=()=>{
 
     window.scroll({
       top:document.querySelector('.homepage-regional-events').offsetTop,
@@ -56,4 +69,19 @@ document.addEventListener('DOMContentLoaded',()=>{
       behaviour:'smooth'
     });
   };
+});
+});
+
+var isActive = false;
+
+$('.js-menu').on('click', function() {
+	if (isActive) {
+		$(this).removeClass('active');
+		$('body').removeClass('menu-open');
+	} else {
+		$(this).addClass('active');
+		$('body').addClass('menu-open');
+	}
+
+	isActive = !isActive;
 });

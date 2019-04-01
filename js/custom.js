@@ -1,4 +1,4 @@
-var countDownDate = new Date("April 4, 2019 15:37:25").getTime();
+var countDownDate = new Date("April 11, 2019 ").getTime();
 
 // Update the count down every 1 second
 
@@ -22,3 +22,17 @@ var countDownDate = new Date("April 4, 2019 15:37:25").getTime();
   document.querySelector('.dmin').innerHTML=minutes;
   document.querySelector('.dsec').innerHTML=seconds;
 },1000);
+
+(function($) {
+    // 'use strict';
+
+    // Main Navigation
+    $( '.hamburger-menu' ).on( 'click', function() {
+        $(this).toggleClass('open');
+        $('.site-navigation').toggleClass('show');
+    });
+
+
+
+
+})(jQuery);
